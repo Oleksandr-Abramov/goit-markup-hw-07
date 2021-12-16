@@ -1,0 +1,10 @@
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts-header .link:hover,
+.contacts-header .link:focus,
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+  outline: none;
+}

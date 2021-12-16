@@ -1,0 +1,43 @@
+.section-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.feature-list {
+  display: flex;
+}
+.feature-list .title,
+.business-list .title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.feature-list .title {
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+}
+.feature-list .item {
+  display: block;
+  width: 270px;
+}
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.feature-list .text {
+  letter-spacing: 0.03em;
+}
+.feature-icon {
+  padding: 25px 100px;
+  border-radius: 4px;
+  background-color: var(--background-body-color);
+  margin-bottom: 30px;
+}
+.feature-icon .icon {
+  display: block;
+}

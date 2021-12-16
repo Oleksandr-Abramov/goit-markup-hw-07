@@ -1,0 +1,16 @@
+:root {
+  --title-text-color: #212121;
+  --primari-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --background-color: #e5e5e5;
+  --background-body-color: #f5f4fa;
+  --icons-color: #afb1b8;
+  --icon-white-color: #ffffff;
+}
+body {
+  color: var(--primari-text-color);
+  font-family: roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+}
