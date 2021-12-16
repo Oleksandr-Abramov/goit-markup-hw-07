@@ -1,9 +1,15 @@
+.command {
+  background-color: var(--background-body-color);
+}
+
 .command-list {
   display: flex;
 }
+
 .command-list .item:not(:last-child) {
   margin-right: 30px;
 }
+
 .command-list .item {
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
@@ -21,6 +27,7 @@
   display: block;
   text-align: center;
 }
+
 .command-list .text {
   font-size: 16px;
   line-height: 1.19;
@@ -28,10 +35,12 @@
   letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
+
 .command-icon-list {
   display: flex;
   justify-content: center;
 }
+
 .command-icon {
   width: 44px;
   height: 44px;
@@ -46,15 +55,14 @@
 .command-icon-item:not(:last-child) {
   margin-right: 10px;
 }
+
 .command-icon > .icon {
   fill: currentColor;
 }
+
 .command-icon:hover,
 .command-icon:focus {
   color: var(--icon-white-color);
   background-color: var(--accent-color);
   outline: none;
-}
-.section.command {
-  background-color: var(--background-body-color);
 }
