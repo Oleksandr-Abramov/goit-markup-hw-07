@@ -1,9 +1,5 @@
-.site-nav .link:hover,
-.site-nav .link:focus,
-.contacts-header .link:hover,
-.contacts-header .link:focus,
-.address-link:hover,
-.address-link:focus {
+.util-accent:hover,
+.util-accent:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
   outline: none;

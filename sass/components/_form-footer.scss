@@ -2,14 +2,13 @@
   margin-left: 93px;
   margin-top: 12px;
 }
-.subscribe .title {
-  margin-bottom: 20px;
-}
+
 .form-footer {
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
-.input-footer {
+.form-footer__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -19,17 +18,18 @@
   color: var(--primary-white-color);
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .form-footer__field:focus-within > & {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
-.field-footer:focus-within > .input-footer {
-  border-color: var(--accent-color);
-  outline: none;
-}
-.footer-button {
+.subscribe .button--footer {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 12px;
 }
-.footer-button .icon {
+.button__icon {
   margin-left: 10px;
 }

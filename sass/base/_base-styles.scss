@@ -8,9 +8,22 @@
   --icons-color: #afb1b8;
   --icon-white-color: #ffffff;
 }
+
 body {
   color: var(--primari-text-color);
   font-family: roboto, sans-serif;
   font-size: 14px;
   line-height: 1.7;
+}
+
+.card-img {
+  display: block;
+}
+
+.pre-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }

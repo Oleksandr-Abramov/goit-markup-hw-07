@@ -1,5 +1,4 @@
 .logo {
-  color: var(--title-text-color);
   text-decoration: none;
   font-family: raleway;
   font-weight: 700;
@@ -7,6 +6,8 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.logo > span {
-  color: var(--accent-color);
+.logo {
+  span {
+    color: var(--accent-color);
+  }
 }

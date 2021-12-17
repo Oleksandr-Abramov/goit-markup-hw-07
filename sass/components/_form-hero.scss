@@ -1,4 +1,4 @@
-.form-title {
+.form-modal__title {
   margin-bottom: 30px;
   font-weight: bold;
   font-size: 20px;
@@ -12,9 +12,17 @@
   position: relative;
   display: flex;
   margin-bottom: 28px;
+
+  &:focus-within > .form-field__icon {
+    fill: var(--accent-color);
+  }
+  &:focus-within > .form-field__input {
+    border-color: var(--accent-color);
+    outline: none;
+  }
 }
 
-.form-input {
+.form-field__input {
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -24,7 +32,7 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-label {
+.form-field__label {
   position: absolute;
   top: -18px;
   left: 0;
@@ -34,7 +42,7 @@
   cursor: pointer;
 }
 
-.form-field .icon {
+.form-field__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -43,7 +51,7 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input.comments {
+.form-field__input.comments {
   height: 120px;
   padding: 12px 16px;
   resize: none;
@@ -53,28 +61,19 @@
   margin-bottom: 20px;
 }
 
-.form-field:focus-within > .icon {
-  fill: var(--accent-color);
-}
-
-.form-field:focus-within > .form-input {
-  border-color: var(--accent-color);
-  outline: none;
-}
-
-.form-button {
+.button--form {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.form-label-checkbox,
-.checkbox-link {
+.form-checkbox__label,
+.form-checkbox__link {
   padding-left: 24px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.checkbox-link {
+.form-checkbox__link {
   display: inline;
   text-decoration-line: underline;
   color: var(--accent-color);
@@ -82,7 +81,7 @@
   padding: 0;
 }
 
-.icon-unchecked {
+.form-checkbox__unchecked {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -93,24 +92,26 @@
   border-radius: 2px;
   background: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .form-checkbox__input:checked ~ & {
+    background: transparent;
+    border: transparent;
+  }
 }
 
-.icon-checked {
+.form-checkbox__checked {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.form-checkbox:checked ~ .icon-unchecked {
-  background: transparent;
-  border: transparent;
+.form-checkbox__input {
+  overflow: hidden;
 }
-
-.form-field.checkbox {
+.form-checkbox {
+  position: relative;
+  display: flex;
+  margin-bottom: 28px;
   padding-left: 12px;
   margin-bottom: 30px;
-}
-
-.form-checkbox {
-  overflow: hidden;
 }
